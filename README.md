@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Scaler Persona Chatbot 🤖
 
-## Getting Started
+A Next.js application that lets you have real conversations with three Scaler/InterviewBit personalities: **Anshuman Singh**, **Abhimanyu Saxena**, and **Kshitij Mishra**.
 
-First, run the development server:
+I built this project for the Scaler Prompt Engineering assignment to demonstrate how high-quality system prompts and the GIGO principle can completely change how an AI behaves.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Live Demo
+> **[Insert Vercel Deployment Link Here]**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features ✨
+- **Persona Switcher**: Seamlessly switch between 3 distinct personalities.
+- **Tailored System Prompts**: Each persona is driven by a carefully crafted system prompt including Chain-of-Thought, strict output constraints, and few-shot examples.
+- **Beautiful UI**: Modern, dark-mode, responsive interface built with Tailwind CSS and Framer Motion.
+- **Streaming AI Responses**: Real-time typing effect powered by the Google Gemini API.
+- **Suggestion Chips**: Context-aware quick start questions for each persona.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack 🛠
+- **Frontend**: Next.js 15 (App Router), React 19, Tailwind CSS, Framer Motion, Lucide React
+- **Backend**: Next.js API Routes (Edge Runtime)
+- **AI Model**: Google Gemini (`gemini-2.5-flash`) via `@google/genai` SDK
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Local Setup 🚀
 
-## Learn More
+1. **Clone the repository:**
+   \`\`\`bash
+   git clone <your-repo-link>
+   cd scaler-chatbot
+   \`\`\`
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install Dependencies:**
+   \`\`\`bash
+   npm install
+   \`\`\`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Set up Environment Variables:**
+   - Copy the example file:
+     \`\`\`bash
+     cp .env.example .env.local
+     \`\`\`
+   - Open `.env.local` and add your Google Gemini API key:
+     \`\`\`
+     GEMINI_API_KEY=your_actual_api_key_here
+     \`\`\`
+   *(You can get a free API key from [Google AI Studio](https://aistudio.google.com/app/apikey))*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Run the Development Server:**
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deploy on Vercel
+## Documentation 📚
+- **[prompts.md](./prompts.md)**: Contains the exact system prompts used and a detailed rationale behind their design.
+- **[reflection.md](./reflection.md)**: A 300-500 word reflection on the process and the GIGO principle.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Grading Criteria Checklist ✅
+- [x] Clean repo structure, `.env.example` present, no API keys committed.
+- [x] Live project deployed (Add link at the top after deploying to Vercel).
+- [x] Clean, responsive frontend with a persona switcher, typing indicator, and suggestion chips.
+- [x] Backend wired correctly using environment variables.
+- [x] Distinct, well-researched system prompts with few-shot examples, CoT instruction, and constraints.
+- [x] `prompts.md` and `reflection.md` present.
