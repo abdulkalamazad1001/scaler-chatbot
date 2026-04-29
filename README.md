@@ -48,30 +48,30 @@ This application goes beyond generic LLM wrappers. It demonstrates the profound 
 If you want to run this project on your own machine:
 
 1. **Clone the repository:**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/abdulkalamazad1001/scaler-chatbot.git
    cd scaler-chatbot
-   \`\`\`
+   ```
 
 2. **Install dependencies:**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Configure Environment Variables:**
    - Copy the example environment file:
-     \`\`\`bash
+     ```bash
      cp .env.example .env.local
-     \`\`\`
-   - Open \`.env.local\` and add your Google Gemini API key:
-     \`\`\`env
+     ```
+   - Open `.env.local` and add your Google Gemini API key:
+     ```env
      GEMINI_API_KEY=your_actual_api_key_here
-     \`\`\`
+     ```
 
 4. **Start the Development Server:**
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
    *The application will be available at [http://localhost:3000](http://localhost:3000)*
 
 ---
