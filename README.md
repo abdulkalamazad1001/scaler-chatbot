@@ -43,13 +43,6 @@ This application goes beyond generic LLM wrappers. It demonstrates the profound 
 
 ---
 
-## 📂 Grading Documentation
-For the assignment evaluation, please review the following dedicated documents:
-1. **[prompts.md](./prompts.md)**: A deep dive into the exact system prompts, constraints, and few-shot examples used to shape each persona.
-2. **[reflection.md](./reflection.md)**: A reflection on the project build process, the effectiveness of the constraints, and the core lessons learned about the GIGO principle.
-
----
-
 ## 💻 Local Setup Instructions
 
 If you want to run this project on your own machine:
@@ -83,5 +76,5 @@ If you want to run this project on your own machine:
 
 ---
 <div align="center">
-  <i>Built with ❤️ for the Scaler Academy Prompt Engineering Assignment</i>
+  <i>Built with ❤️ by Abdul Kalam Azad</i>
 </div>
