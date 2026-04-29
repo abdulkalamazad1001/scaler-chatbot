@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🎯 Scaler Persona Chatbot</h1>
+  <h1> Scaler Persona Chatbot</h1>
   <p><em>An intelligent, persona-driven AI mentorship platform built for the Scaler Prompt Engineering assignment.</em></p>
 
   [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
