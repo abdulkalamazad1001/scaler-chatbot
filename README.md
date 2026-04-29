@@ -5,7 +5,7 @@ A Next.js application that lets you have real conversations with three Scaler/In
 I built this project for the Scaler Prompt Engineering assignment to demonstrate how high-quality system prompts and the GIGO principle can completely change how an AI behaves.
 
 ## Live Demo
-> **[Insert Vercel Deployment Link Here]**
+> **[https://scaler-chatbot-three.vercel.app/](https://scaler-chatbot-three.vercel.app/)**
 
 ## Features ✨
 - **Persona Switcher**: Seamlessly switch between 3 distinct personalities.
